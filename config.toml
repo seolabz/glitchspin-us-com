@@ -1,0 +1,21 @@
+baseURL = "https://glitchspin.us.com/"
+title = "Pelican Casino"
+languageCode = "da-dk"
+defaultContentLanguage = "dk"
+
+[taxonomies]
+  tag = ""
+  category = ""
+
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+[params]
+  defaultLang = "dk"
+
+[languages]
+  [languages.dk]
+    weight = 10
+    languageName = "da"
+    languageCode = "da-dk"
+    title = "Pelican Casino"
+    contentDir = "content/dk"

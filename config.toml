@@ -1,6 +1,7 @@
-baseURL = "https://example.com"
+
+baseURL = "https://glitchspin.us.com/"
 title = "Pelican Casino"
-defaultContentLanguage = "pt"
+defaultContentLanguage = "dk"
 
 [taxonomies]
   tag = ""
@@ -9,8 +10,8 @@ defaultContentLanguage = "pt"
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [params]
-  defaultLang = "pt"
 
+defaultLang = "dk"
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
@@ -44,24 +45,24 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
     
   #contentDir = "content/en"
 
-  [languages.pt]
-    weight = 3
-    languageName = "Portuguese"
-    languageCode = "pt-pt"
-    title = "Pelican Casino"
-    contentDir = "content/pt"
+#   [languages.pt]
+#     weight = 3
+#     languageName = "Portuguese"
+# languageCode = "da-dk"
+#     title = "Pelican Casino"
+#     contentDir = "content/pt"
    #  [languages.si]
     #   weight = 4
      #  languageName = "Slovenian"
      #  languageCode = "sl-si"
      #  title = "Pelican Casino"
      #  contentDir = "content/si"
-   #  [languages.dk]
-    #   weight = 5
-   #    languageName = "Danish"
-   #    languageCode = "da-dk"
-    #   title = "Pelican Casino"
-    #   contentDir = "content/dk"
+ [languages.dk]
+  weight = 5
+    languageName = "da"
+    languageCode = "da-dk"
+    title = "Pelican Casino"
+    contentDir = "content/dk"
 
   # [languages.cz]
   #   weight = 1

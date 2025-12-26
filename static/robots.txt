@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /
+Disallow: /cdn-cgi/
+Disallow: /js/
+Disallow: /popup/
+
+Sitemap: https://glitchspin.us.com/sitemap.xml

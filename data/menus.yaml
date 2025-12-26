@@ -1,0 +1,860 @@
+cs:
+  subnav:
+    - name: "Domu"
+      url: "#"
+      weight: 1
+    - name: "Bonusy"
+      url: "#"
+      weight: 2
+    - name: "Kasino"
+      url: "#"
+      weight: 3
+    - name: "Vyplaty"
+      url: "#"
+      weight: 4
+    - name: "Sazky"
+      url: "#"
+      weight: 5
+  header:
+    - name: "Registrace"
+      url: "#"
+      weight: 1
+      params:
+        class: "btn btn-register"
+    - name: "Prihlaseni"
+      url: "#"
+      weight: 2
+      params:
+        class: "btn btn-login"
+  topnav:
+    - name: "Kasino"
+      url: "#"
+      pre: ""
+    - name: "Nazivo"
+      url: "#"
+      pre: ""
+    - name: "Sport"
+      url: "#"
+      pre: ""
+  mobile: []
+  footer: []
+
+hu:
+  subnav:
+    - name: "Kezdőlap"
+      url: "#"
+      weight: 1
+    - name: "Bónuszok"
+      url: "#"
+      weight: 2
+    - name: "Kaszinó"
+      url: "#"
+      weight: 3
+    - name: "Kifizetések"
+      url: "#"
+      weight: 4
+    - name: "Fogadások"
+      url: "#"
+      weight: 5
+  header:
+    - name: "Regisztráció"
+      url: "#"
+      weight: 1
+      params:
+        class: "btn btn-register"
+    - name: "Bejelentkezés"
+      url: "#"
+      weight: 2
+      params:
+        class: "btn btn-login"
+  topnav:
+    - name: "Kaszinó"
+      url: "#"
+      pre: ""
+    - name: "Élő"
+      url: "#"
+      pre: ""
+    - name: "Sport"
+      url: "#"
+      pre: ""
+  mobile: []
+  footer: []
+
+pl:
+  subnav:
+    - name: "Start"
+      url: "#"
+      weight: 1
+    - name: "Bonusy"
+      url: "#"
+      weight: 2
+    - name: "Kasyno"
+      url: "#"
+      weight: 3
+    - name: "Wypłaty"
+      url: "#"
+      weight: 4
+    - name: "Zakłady"
+      url: "#"
+      weight: 5
+  header:
+    - name: "Rejestracja"
+      url: "#"
+      weight: 1
+      params:
+        class: "btn btn-register"
+    - name: "Logowanie"
+      url: "#"
+      weight: 2
+      params:
+        class: "btn btn-login"
+  topnav:
+    - name: "Kasyno"
+      url: "#"
+      pre: ""
+    - name: "Na żywo"
+      url: "#"
+      pre: ""
+    - name: "Sport"
+      url: "#"
+      pre: ""
+  mobile: []
+  footer: []
+
+sr:
+  subnav:
+    - name: "Početna"
+      url: "#"
+      weight: 1
+    - name: "Bonusi"
+      url: "#"
+      weight: 2
+    - name: "Kazino"
+      url: "#"
+      weight: 3
+    - name: "Isplate"
+      url: "#"
+      weight: 4
+    - name: "Opklade"
+      url: "#"
+      weight: 5
+  header:
+    - name: "Registracija"
+      url: "#"
+      weight: 1
+      params:
+        class: "btn btn-register"
+    - name: "Prijava"
+      url: "#"
+      weight: 2
+      params:
+        class: "btn btn-login"
+  topnav:
+    - name: "Kazino"
+      url: "#"
+      pre: ""
+    - name: "Uživo"
+      url: "#"
+      pre: ""
+    - name: "Sport"
+      url: "#"
+      pre: ""
+  mobile: []
+  footer: []
+
+it:
+  subnav:
+    - name: "Home"
+      url: "#"
+      weight: 1
+    - name: "Bonus"
+      url: "#"
+      weight: 2
+    - name: "Casinò"
+      url: "#"
+      weight: 3
+    - name: "Pagamenti"
+      url: "#"
+      weight: 4
+    - name: "Scommesse"
+      url: "#"
+      weight: 5
+  header:
+    - name: "Registrazione"
+      url: "#"
+      weight: 1
+      params:
+        class: "btn btn-register"
+    - name: "Accedi"
+      url: "#"
+      weight: 2
+      params:
+        class: "btn btn-login"
+  topnav:
+    - name: "Casinò"
+      url: "#"
+      pre: ""
+    - name: "Live"
+      url: "#"
+      pre: ""
+    - name: "Sport"
+      url: "#"
+      pre: ""
+  mobile: []
+  footer: []
+
+es:
+  subnav:
+    - name: "Inicio"
+      url: "#"
+      weight: 1
+    - name: "Bonos"
+      url: "#"
+      weight: 2
+    - name: "Casino"
+      url: "#"
+      weight: 3
+    - name: "Pagos"
+      url: "#"
+      weight: 4
+    - name: "Apuestas"
+      url: "#"
+      weight: 5
+  header:
+    - name: "Registro"
+      url: "#"
+      weight: 1
+      params:
+        class: "btn btn-register"
+    - name: "Iniciar sesión"
+      url: "#"
+      weight: 2
+      params:
+        class: "btn btn-login"
+  topnav:
+    - name: "Casino"
+      url: "#"
+      pre: ""
+    - name: "En vivo"
+      url: "#"
+      pre: ""
+    - name: "Deportes"
+      url: "#"
+      pre: ""
+  mobile: []
+  footer: []
+
+en:
+  subnav:
+    - name: "Home"
+      url: "#"
+      weight: 1
+    - name: "Bonuses"
+      url: "#"
+      weight: 2
+    - name: "Casino"
+      url: "#"
+      weight: 3
+    - name: "Payouts"
+      url: "#"
+      weight: 4
+    - name: "Bets"
+      url: "#"
+      weight: 5
+  header:
+    - name: "Register"
+      url: "#"
+      weight: 1
+      params:
+        class: "btn btn-register"
+    - name: "Login"
+      url: "#"
+      weight: 2
+      params:
+        class: "btn btn-login"
+  topnav:
+    - name: "Casino"
+      url: "#"
+      pre: ""
+    - name: "Live"
+      url: "#"
+      pre: ""
+    - name: "Sports"
+      url: "#"
+      pre: ""
+  mobile: []
+  footer: []
+
+de:
+  subnav:
+    - name: "Startseite"
+      url: "#"
+      weight: 1
+    - name: "Boni"
+      url: "#"
+      weight: 2
+    - name: "Casino"
+      url: "#"
+      weight: 3
+    - name: "Auszahlungen"
+      url: "#"
+      weight: 4
+    - name: "Wetten"
+      url: "#"
+      weight: 5
+  header:
+    - name: "Registrierung"
+      url: "#"
+      weight: 1
+      params:
+        class: "btn btn-register"
+    - name: "Anmelden"
+      url: "#"
+      weight: 2
+      params:
+        class: "btn btn-login"
+  topnav:
+    - name: "Casino"
+      url: "#"
+      pre: ""
+    - name: "Live"
+      url: "#"
+      pre: ""
+    - name: "Sport"
+      url: "#"
+      pre: ""
+  mobile: []
+  footer: []
+
+el:
+  subnav:
+    - name: "Αρχική"
+      url: "#"
+      weight: 1
+    - name: "Μπόνους"
+      url: "#"
+      weight: 2
+    - name: "Καζίνο"
+      url: "#"
+      weight: 3
+    - name: "Πληρωμές"
+      url: "#"
+      weight: 4
+    - name: "Στοιχήματα"
+      url: "#"
+      weight: 5
+  header:
+    - name: "Εγγραφή"
+      url: "#"
+      weight: 1
+      params:
+        class: "btn btn-register"
+    - name: "Σύνδεση"
+      url: "#"
+      weight: 2
+      params:
+        class: "btn btn-login"
+  topnav:
+    - name: "Καζίνο"
+      url: "#"
+      pre: ""
+    - name: "Ζωντανά"
+      url: "#"
+      pre: ""
+    - name: "Αθλητικά"
+      url: "#"
+      pre: ""
+  mobile: []
+  footer: []
+
+uk:
+  subnav:
+    - name: "Головна"
+      url: "#"
+      weight: 1
+    - name: "Бонуси"
+      url: "#"
+      weight: 2
+    - name: "Казино"
+      url: "#"
+      weight: 3
+    - name: "Виплати"
+      url: "#"
+      weight: 4
+    - name: "Ставки"
+      url: "#"
+      weight: 5
+  header:
+    - name: "Реєстрація"
+      url: "#"
+      weight: 1
+      params:
+        class: "btn btn-register"
+    - name: "Вхід"
+      url: "#"
+      weight: 2
+      params:
+        class: "btn btn-login"
+  topnav:
+    - name: "Казино"
+      url: "#"
+      pre: ""
+    - name: "Наживо"
+      url: "#"
+      pre: ""
+    - name: "Спорт"
+      url: "#"
+      pre: ""
+  mobile: []
+  footer: []
+
+fr:
+  subnav:
+    - name: "Accueil"
+      url: "#"
+      weight: 1
+    - name: "Bonus"
+      url: "#"
+      weight: 2
+    - name: "Casino"
+      url: "#"
+      weight: 3
+    - name: "Paiements"
+      url: "#"
+      weight: 4
+    - name: "Paris"
+      url: "#"
+      weight: 5
+  header:
+    - name: "Inscription"
+      url: "#"
+      weight: 1
+      params:
+        class: "btn btn-register"
+    - name: "Connexion"
+      url: "#"
+      weight: 2
+      params:
+        class: "btn btn-login"
+  topnav:
+    - name: "Casino"
+      url: "#"
+      pre: ""
+    - name: "En direct"
+      url: "#"
+      pre: ""
+    - name: "Sports"
+      url: "#"
+      pre: ""
+  mobile: []
+  footer: []
+
+pt:
+  subnav:
+    - name: "Início"
+      url: "#"
+      weight: 1
+    - name: "Bônus"
+      url: "#"
+      weight: 2
+    - name: "Casino"
+      url: "#"
+      weight: 3
+    - name: "Pagamentos"
+      url: "#"
+      weight: 4
+    - name: "Apostas"
+      url: "#"
+      weight: 5
+  header:
+    - name: "Registro"
+      url: "#"
+      weight: 1
+      params:
+        class: "btn btn-register"
+    - name: "Entrar"
+      url: "#"
+      weight: 2
+      params:
+        class: "btn btn-login"
+  topnav:
+    - name: "Casino"
+      url: "#"
+      pre: ""
+    - name: "Ao vivo"
+      url: "#"
+      pre: ""
+    - name: "Esportes"
+      url: "#"
+      pre: ""
+  mobile: []
+  footer: []
+
+da:
+  subnav:
+    - name: "Hjem"
+      url: "#"
+      weight: 1
+    - name: "Bonusser"
+      url: "#"
+      weight: 2
+    - name: "Casino"
+      url: "#"
+      weight: 3
+    - name: "Udbetalinger"
+      url: "#"
+      weight: 4
+    - name: "Væddemål"
+      url: "#"
+      weight: 5
+  header:
+    - name: "Registrering"
+      url: "#"
+      weight: 1
+      params:
+        class: "btn btn-register"
+    - name: "Log ind"
+      url: "#"
+      weight: 2
+      params:
+        class: "btn btn-login"
+  topnav:
+    - name: "Casino"
+      url: "#"
+      pre: ""
+    - name: "Live"
+      url: "#"
+      pre: ""
+    - name: "Sport"
+      url: "#"
+      pre: ""
+  mobile: []
+  footer: []
+
+sv:
+  subnav:
+    - name: "Hem"
+      url: "#"
+      weight: 1
+    - name: "Bonusar"
+      url: "#"
+      weight: 2
+    - name: "Casino"
+      url: "#"
+      weight: 3
+    - name: "Utbetalningar"
+      url: "#"
+      weight: 4
+    - name: "Spel"
+      url: "#"
+      weight: 5
+  header:
+    - name: "Registrering"
+      url: "#"
+      weight: 1
+      params:
+        class: "btn btn-register"
+    - name: "Logga in"
+      url: "#"
+      weight: 2
+      params:
+        class: "btn btn-login"
+  topnav:
+    - name: "Casino"
+      url: "#"
+      pre: ""
+    - name: "Live"
+      url: "#"
+      pre: ""
+    - name: "Sport"
+      url: "#"
+      pre: ""
+  mobile: []
+  footer: []
+
+fi:
+  subnav:
+    - name: "Koti"
+      url: "#"
+      weight: 1
+    - name: "Bonukset"
+      url: "#"
+      weight: 2
+    - name: "Kasino"
+      url: "#"
+      weight: 3
+    - name: "Maksut"
+      url: "#"
+      weight: 4
+    - name: "Vedot"
+      url: "#"
+      weight: 5
+  header:
+    - name: "Rekisteröinti"
+      url: "#"
+      weight: 1
+      params:
+        class: "btn btn-register"
+    - name: "Kirjaudu"
+      url: "#"
+      weight: 2
+      params:
+        class: "btn btn-login"
+  topnav:
+    - name: "Kasino"
+      url: "#"
+      pre: ""
+    - name: "Live"
+      url: "#"
+      pre: ""
+    - name: "Urheilu"
+      url: "#"
+      pre: ""
+  mobile: []
+  footer: []
+
+ar:
+  subnav:
+    - name: "الرئيسية"
+      url: "#"
+      weight: 1
+    - name: "المكافآت"
+      url: "#"
+      weight: 2
+    - name: "الكازينو"
+      url: "#"
+      weight: 3
+    - name: "المدفوعات"
+      url: "#"
+      weight: 4
+    - name: "الرهانات"
+      url: "#"
+      weight: 5
+  header:
+    - name: "التسجيل"
+      url: "#"
+      weight: 1
+      params:
+        class: "btn btn-register"
+    - name: "تسجيل الدخول"
+      url: "#"
+      weight: 2
+      params:
+        class: "btn btn-login"
+  topnav:
+    - name: "الكازينو"
+      url: "#"
+      pre: ""
+    - name: "مباشر"
+      url: "#"
+      pre: ""
+    - name: "الرياضة"
+      url: "#"
+      pre: ""
+  mobile: []
+  footer: []
+
+ru:
+  subnav:
+    - name: "Главная"
+      url: "#"
+      weight: 1
+    - name: "Бонусы"
+      url: "#"
+      weight: 2
+    - name: "Казино"
+      url: "#"
+      weight: 3
+    - name: "Выплаты"
+      url: "#"
+      weight: 4
+    - name: "Ставки"
+      url: "#"
+      weight: 5
+  header:
+    - name: "Регистрация"
+      url: "#"
+      weight: 1
+      params:
+        class: "btn btn-register"
+    - name: "Вход"
+      url: "#"
+      weight: 2
+      params:
+        class: "btn btn-login"
+  topnav:
+    - name: "Казино"
+      url: "#"
+      pre: ""
+    - name: "Лайв"
+      url: "#"
+      pre: ""
+    - name: "Спорт"
+      url: "#"
+      pre: ""
+  mobile: []
+  footer: []
+
+bg:
+  subnav:
+    - name: "Начало"
+      url: "#"
+      weight: 1
+    - name: "Бонуси"
+      url: "#"
+      weight: 2
+    - name: "Казино"
+      url: "#"
+      weight: 3
+    - name: "Плащания"
+      url: "#"
+      weight: 4
+    - name: "Залози"
+      url: "#"
+      weight: 5
+  header:
+    - name: "Регистрация"
+      url: "#"
+      weight: 1
+      params:
+        class: "btn btn-register"
+    - name: "Вход"
+      url: "#"
+      weight: 2
+      params:
+        class: "btn btn-login"
+  topnav:
+    - name: "Казино"
+      url: "#"
+      pre: ""
+    - name: "На живо"
+      url: "#"
+      pre: ""
+    - name: "Спорт"
+      url: "#"
+      pre: ""
+  mobile: []
+  footer: []
+
+tr:
+  subnav:
+    - name: "Ana Sayfa"
+      url: "#"
+      weight: 1
+    - name: "Bonuslar"
+      url: "#"
+      weight: 2
+    - name: "Kumarhane"
+      url: "#"
+      weight: 3
+    - name: "Ödemeler"
+      url: "#"
+      weight: 4
+    - name: "Bahisler"
+      url: "#"
+      weight: 5
+  header:
+    - name: "Kayıt"
+      url: "#"
+      weight: 1
+      params:
+        class: "btn btn-register"
+    - name: "Giriş"
+      url: "#"
+      weight: 2
+      params:
+        class: "btn btn-login"
+  topnav:
+    - name: "Kumarhane"
+      url: "#"
+      pre: ""
+    - name: "Canlı"
+      url: "#"
+      pre: ""
+    - name: "Spor"
+      url: "#"
+      pre: ""
+  mobile: []
+  footer: []
+
+kk:
+  subnav:
+    - name: "Басты бет"
+      url: "#"
+      weight: 1
+    - name: "Бонустар"
+      url: "#"
+      weight: 2
+    - name: "Казино"
+      url: "#"
+      weight: 3
+    - name: "Төлемдер"
+      url: "#"
+      weight: 4
+    - name: "Ставкалар"
+      url: "#"
+      weight: 5
+  header:
+    - name: "Тіркелу"
+      url: "#"
+      weight: 1
+      params:
+        class: "btn btn-register"
+    - name: "Кіру"
+      url: "#"
+      weight: 2
+      params:
+        class: "btn btn-login"
+  topnav:
+    - name: "Казино"
+      url: "#"
+      pre: ""
+    - name: "Тікелей"
+      url: "#"
+      pre: ""
+    - name: "Спорт"
+      url: "#"
+      pre: ""
+  mobile: []
+  footer: []
+
+sl:
+  subnav:
+    - name: "Domov"
+      url: "#"
+      weight: 1
+    - name: "Bonusi"
+      url: "#"
+      weight: 2
+    - name: "Kasino"
+      url: "#"
+      weight: 3
+    - name: "Izplačila"
+      url: "#"
+      weight: 4
+    - name: "Stave"
+      url: "#"
+      weight: 5
+  header:
+    - name: "Registracija"
+      url: "#"
+      weight: 1
+      params:
+        class: "btn btn-register"
+    - name: "Prijava"
+      url: "#"
+      weight: 2
+      params:
+        class: "btn btn-login"
+  topnav:
+    - name: "Kasino"
+      url: "#"
+      pre: ""
+    - name: "V živo"
+      url: "#"
+      pre: ""
+    - name: "Šport"
+      url: "#"
+      pre: ""
+  mobile: []
+  footer: []

@@ -1,0 +1,128 @@
+hero:
+  badge: "Caspero-inspired VIP offer"
+  highlight: "VIP Status?"
+  title: "Bring the Caspero energy with you"
+  subtitle: "High-limit tables, neon-lit lobbies, and personal hosts – all tuned for the next generation of Pelican partners."
+  primary_cta:
+    text: "Play Now"
+    url: "#games"
+    i18n_id: "hero_cta_primary"
+  secondary_cta:
+    text: "See Promotions"
+    url: "#promotions"
+    i18n_id: "hero_cta_secondary"
+  stats:
+    - label: "Jackpots paid"
+      value: "$4.2M+"
+    - label: "Exclusive games"
+      value: "320+"
+    - label: "Payment speed"
+      value: "< 10 min"
+
+feature_cards:
+  - icon: "/images/ico/roulette.svg"
+    title: "Premium lobbies"
+    text: "Cinematic tables and immersive studios styled after the Caspero hero block."
+  - icon: "/images/ico/casino-chip.svg"
+    title: "Weekly drops"
+    text: "Stackable reloads, wheel of fortune spins, and social-friendly quests."
+  - icon: "/images/ico/croupier.svg"
+    title: "VIP concierge"
+    text: "Tiered hosts, curated tournaments, and on-demand payouts."
+
+spotlight:
+  title: "Your Caspero-style welcome"
+  description: "Launch with a neon gradient hero, glowing buttons, and cards that echo the captured HTML motif. Plug any localized content straight into these blocks."
+  bullets:
+    - "Responsive grid mirroring Caspero’s split hero"
+    - "Hover-animated CTA buttons with layered gradients"
+    - "Hero counter badges for trust signals"
+
+promotions:
+  title: "Live promos & tournaments"
+  subtitle: "Styled after the captured Caspero promo stack."
+  cards:
+    - label: "Neon boost"
+      headline: "200% + 100FS"
+      text: "Match Caspero’s top fold with a chunky gradient banner and glowing borders."
+      action: "Join Bonus"
+      action_i18n: "promo_cta_join"
+    - label: "VIP Host Race"
+      headline: "$25,000"
+      text: "Leaderboard section that pulls avatars or initials for a futuristic ticker."
+      action: "View Race"
+      action_i18n: "promo_cta_view"
+    - label: "Live Drops"
+      headline: "Hourly"
+      text: "Live-feed cards that synchronize with the live winners table below."
+      action: "Activate"
+      action_i18n: "promo_cta_activate"
+
+steps:
+  title: "Onboarding tunnel"
+  items:
+    - title: "Register"
+      text: "Fast form slide-out styled like Caspero’s floating cards."
+    - title: "Verify"
+      text: "Use timeline chips to show progress and encourage action."
+    - title: "Deposit"
+      text: "Badge supported payment icons with gradient outlines."
+    - title: "Play"
+      text: "Spotlight exclusive tables and provider carousel."
+
+banking:
+  title: "Trusted payments"
+  methods:
+    - name: "Visa"
+      icon: "/images/payments/visa.svg"
+    - name: "Mastercard"
+      icon: "/images/payments/mastercard.svg"
+    - name: "Skrill"
+      icon: "/images/payments/skrill.svg"
+    - name: "Neteller"
+      icon: "/images/payments/neteller.svg"
+    - name: "Crypto"
+      icon: "/images/payments/bitcoin.svg"
+
+cta:
+  badge: "Need something custom?"
+  title: "Blend Pelican data with Caspero visuals"
+  text: "Use this template as a starting point for bespoke markets, experiments, or localized landers."
+  primary_cta:
+    text: "Launch Template"
+    url: "/"
+    i18n_id: "cta_launch_template"
+  secondary_cta:
+    text: "Request Customization"
+    url: "mailto:design@pelican.local"
+    i18n_id: "cta_request_custom"
+
+providers:
+  - name: "Yggdrasil"
+    logo: "/images/providers/yggdrasil.svg"
+  - name: "Wazdan"
+    logo: "/images/providers/wazdan.svg"
+  - name: "Play'n GO"
+    logo: "/images/providers/playn-go.svg"
+  - name: "Relax Gaming"
+    logo: "/images/providers/relax-gaming.svg"
+  - name: "Red Tiger"
+    logo: "/images/providers/red-tiger.svg"
+  - name: "Quickspin"
+    logo: "/images/providers/quickspin.svg"
+  - name: "Playtech"
+    logo: "/images/providers/playtech.svg"
+  - name: "Thunderkick"
+    logo: "/images/providers/thunderkick.svg"
+
+trust:
+  title: "Compliance & protection"
+  badges:
+    - label: "256-bit SSL"
+      note: "End-to-end encrypted traffic"
+    - label: "GLI RNG"
+      note: "Independent fairness audits"
+    - label: "24/7 AML"
+      note: "Continuous risk monitoring"
+    - label: "18+ Only"
+      note: "Play responsibly"

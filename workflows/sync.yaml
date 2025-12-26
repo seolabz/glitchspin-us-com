@@ -1,0 +1,60 @@
+name: Sync from template to multiple repos
+
+on:
+  workflow_dispatch:
+    inputs:
+      targets:
+        description: 'JSON array of target repos (e.g. ["user/repo1","user/repo2"])'
+        required: true
+      branch:
+        description: 'Target branch'
+        default: 'main'
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🧰 Checkout template repo
+        uses: actions/checkout@v4
+
+      - name: 🔧 Parse inputs safely
+        id: vars
+        run: |
+          echo "RAW_TARGETS=${{ github.event.inputs.targets }}" >> $GITHUB_ENV
+          echo "BRANCH=${{ github.event.inputs.branch }}" >> $GITHUB_ENV
+          echo "Targets (raw): ${{ github.event.inputs.targets }}"
+          echo "Branch: ${{ github.event.inputs.branch }}"
+
+      - name: 🚀 Sync to targets
+        env:
+          GH_TOKEN: ${{ secrets.GH_SYNC_TOKEN }}
+          RAW_TARGETS: ${{ env.RAW_TARGETS }}
+          BRANCH: ${{ env.BRANCH }}
+        run: |
+          set -e
+          echo "==> Starting sync at $(date)"
+          echo "$RAW_TARGETS" | python3 -c "import sys,urllib.parse,json; print('\n'.join(json.loads(urllib.parse.unquote(sys.stdin.read()))))" | while read TARGET; do
+            echo "=== Syncing $TARGET ==="
+            git clone --depth=1 "https://$GH_TOKEN@github.com/$TARGET.git" repo || {
+              echo "⚠️ Repo $TARGET not found or private"
+              continue
+            }
+            rsync -av --delete \
+              --exclude '.git' \
+              --exclude '.github' \
+              --exclude 'node_modules' \
+              ./ ./repo/ || true
+            cd repo
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git status
+            git diff --stat || true
+            git add -A
+            git commit -m "🔄 Sync from template repo" || echo "No changes to commit"
+            git push origin "$BRANCH" || echo "⚠️ Push failed for $TARGET"
+            cd ..
+            rm -rf repo
+            echo "✅ Finished $TARGET"
+          done
+          echo "🎯 All syncs complete."

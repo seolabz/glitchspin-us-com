@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.LanguageCode }}">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ .Title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {{ with .Params.description }}
+    <meta name="description" content="{{ . }}">
+  {{ end }}
+  {{ with .Params.keywords }}
+    <meta name="keywords" content="{{ delimit . ", " }}">
+  {{ end }}
+  {{ with .Params.canonical }}
+    <link rel="canonical" href="{{ . }}">
+  {{ end }}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  {{ with site.Data.site.assets.favicon }}
+    <link rel="icon" href="{{ . | relURL }}">
+  {{ end }}
+  <link rel="stylesheet" href="{{ "css/popup.css" | relURL }}">
+  <link rel="stylesheet" href="{{ "css/brand-2.css" | relURL }}">
+</head>
+<body class="brand2-body">
+  {{ $org := site.Data.site.organization }}
+  {{ $fallbackLang := site.Params.defaultLang | default "cs" }}
+  {{ $lang := or (index site.Data.menus .Site.Language.Lang) (index site.Data.menus $fallbackLang) }}
+  {{ $langKey := .Site.Language.Lang }}
+  {{ $brand := index site.Data.data_info $langKey }}
+  {{ if not $brand }}
+    {{ $brand = index site.Data.data_info $fallbackLang }}
+  {{ end }}
+  {{ if not $brand }}
+    {{ $brand = index site.Data.data_info "pt" }}
+  {{ end }}
+  {{ if not $brand }}
+    {{ range $key, $entry := site.Data.data_info }}
+      {{ $brand = $entry }}
+      {{ break }}
+    {{ end }}
+  {{ end }}
+  {{ $heroHeading := or .Params.banner_title .Title }}
+  {{ $heroSubtitle := or .Params.banner_subtitle $brand.hero.subtitle }}
+
+  <div class="brand2-page">
+    <header class="brand2-header">
+      <div class="container">
+        <div class="header-bar">
+          <a class="logo" href="{{ .Site.Home.RelPermalink }}">
+            {{ with $org.logo }}
+              <img src="{{ . | relURL }}" alt="{{ $org.name }}">
+            {{ else }}
+              <span>{{ site.Title }}</span>
+            {{ end }}
+          </a>
+          <button class="burger-toggle" type="button" aria-label="{{ i18n "burger_menu_label" | default "Open menu" }}">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <nav class="primary-nav">
+            {{ with $lang.subnav }}
+              {{ range sort . "weight" }}
+                <a href="{{ .url | relLangURL }}">{{ .name }}</a>
+              {{ end }}
+            {{ end }}
+          </nav>
+          <div class="header-cta">
+            {{ with $lang.header }}
+              {{ range sort . "weight" }}
+                {{ $href := .url }}
+                {{ if not (hasPrefix $href "#") }}
+                  {{ $href = $href | relLangURL }}
+                {{ end }}
+                {{ $classes := printf "nav-chip %s" (default "" .params.class) }}
+                <a href="{{ $href }}" class="{{ $classes }}">{{ .name }}</a>
+              {{ end }}
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-block" id="top">
+        <a class="hero-gift" href="#" aria-label="Unlock surprise bonus">
+          <img src="{{ "images/ico/gift-box-svgrepo-com.svg" | relURL }}" alt="">
+          <span>Bonus</span>
+        </a>
+        <div class="container hero-grid">
+          <div class="hero-content">
+            {{ with $brand.hero.badge }}
+              <span class="hero-badge">{{ . }}</span>
+            {{ end }}
+            <h1>{{ $heroHeading }}</h1>
+            {{ with $brand.hero.highlight }}
+              <p class="hero-highlight">{{ . }}</p>
+            {{ end }}
+            {{ with $brand.hero.title }}
+              <p class="hero-title">{{ . }}</p>
+            {{ end }}
+            {{ with $heroSubtitle }}
+              <p class="hero-subtitle">{{ . }}</p>
+            {{ end }}
+            <div class="hero-actions">
+              {{ with $brand.hero.primary_cta }}
+                {{ $label := .text }}
+                {{ with .i18n_id }}
+                  {{ $translated := i18n . }}
+                  {{ if $translated }}{{ $label = $translated }}{{ end }}
+                {{ end }}
+                <a class="btn btn-primary" href="{{ .url }}">{{ $label }}</a>
+              {{ end }}
+              {{ with $brand.hero.secondary_cta }}
+                {{ $label := .text }}
+                {{ with .i18n_id }}
+                  {{ $translated := i18n . }}
+                  {{ if $translated }}{{ $label = $translated }}{{ end }}
+                {{ end }}
+                <a class="btn btn-ghost" href="{{ .url }}">{{ $label }}</a>
+              {{ end }}
+            </div>
+            {{ with $brand.hero.stats }}
+              <dl class="hero-stats">
+                {{ range . }}
+                  <div class="hero-stat">
+                    <dt>{{ .value }}</dt>
+                    <dd>{{ .label }}</dd>
+                  </div>
+                {{ end }}
+              </dl>
+            {{ end }}
+          </div>
+          {{ $gameSections := site.Data.games.sections }}
+          {{ $featured := cond (gt (len $gameSections) 0) (index $gameSections 0) nil }}
+          {{ with $featured }}
+            <div class="hero-card">
+              <div class="hero-card__inner">
+                <div class="hero-card__header">
+                  <h2>{{ i18n "game_section_exclusive" | default "Exclusive drop" }}</h2>
+                  <span class="hero-chip">{{ now.Format "15:04" }}</span>
+                </div>
+                <ul class="hero-card__list">
+                  {{ range first 4 .games }}
+                    <li>
+                      <div>
+                        <p>{{ .title }}</p>
+                        {{ with .tagline }}
+                          <small>{{ . }}</small>
+                        {{ end }}
+                      </div>
+                      <span>{{ .badge | default "+50%" }}</span>
+                    </li>
+                  {{ end }}
+                </ul>
+                <a class="btn btn-outline" href="#games">{{ i18n "game_button_play" | default "Play" }}</a>
+              </div>
+            </div>
+          {{ end }}
+        </div>
+        {{ with $brand.spotlight }}
+          <div class="hero-spotlight container">
+            <div>
+              <h3>{{ .title }}</h3>
+              <p>{{ .description }}</p>
+            </div>
+            <ul>
+              {{ range .bullets }}
+                <li>{{ . }}</li>
+              {{ end }}
+            </ul>
+          </div>
+        {{ end }}
+      </section>
+
+      {{ with $brand.feature_cards }}
+        <section class="feature-band">
+          <div class="container feature-grid">
+            {{ range . }}
+              {{ $card := . }}
+              <article class="feature-card">
+                {{ with .icon }}
+                  <span class="feature-icon">
+                    <img src="{{ . | relURL }}" alt="{{ $card.title }}">
+                  </span>
+                {{ end }}
+                <h3>{{ .title }}</h3>
+                <p>{{ .text }}</p>
+              </article>
+            {{ end }}
+          </div>
+        </section>
+      {{ end }}
+
+      {{ with $brand.promotions }}
+        <section class="promotions" id="promotions">
+          <div class="container">
+            <div class="section-heading">
+              <h2>{{ .title }}</h2>
+              {{ with .subtitle }}
+                <p>{{ . }}</p>
+              {{ end }}
+            </div>
+            <div class="promo-grid">
+              {{ range .cards }}
+                <article class="promo-card">
+                  <span class="promo-label">{{ .label }}</span>
+                  <h3>{{ .headline }}</h3>
+                  <p>{{ .text }}</p>
+                  {{ $actionLabel := .action }}
+                  {{ with .action_i18n }}
+                    {{ $translated := i18n . }}
+                    {{ if $translated }}{{ $actionLabel = $translated }}{{ end }}
+                  {{ end }}
+                  <button type="button" class="btn btn-outline">{{ $actionLabel }}</button>
+                </article>
+              {{ end }}
+            </div>
+          </div>
+        </section>
+      {{ end }}
+
+      {{ with $brand.steps }}
+        <section class="roadmap">
+          <div class="container">
+            <div class="section-heading">
+              <h2>{{ .title }}</h2>
+              <p></p>
+            </div>
+            <div class="roadmap-grid">
+              {{ range $index, $item := .items }}
+                <article class="roadmap-step">
+                  <span class="step-index">{{ add $index 1 }}</span>
+                  <h3>{{ $item.title }}</h3>
+                  <p>{{ $item.text }}</p>
+                </article>
+              {{ end }}
+            </div>
+          </div>
+        </section>
+      {{ end }}
+
+      {{ $sections := site.Data.games.sections }}
+      {{ if $sections }}
+        <section class="games" id="games">
+          <div class="container">
+            <div class="section-heading">
+              <h2>{{ i18n "game_section_popular" | default "Top games" }}</h2>
+            </div>
+            {{ range $sections }}
+              <div class="games-group">
+                <h3>{{ i18n .label_key | default .label_key }}</h3>
+                <div class="games-grid">
+                  {{ range first 6 .games }}
+                    <article class="game-card">
+                      <div class="game-thumb">
+                        <img src="{{ .image | relURL }}" alt="{{ .title }}">
+                        {{ if .exclusive }}
+                          <span class="pill pill-exclusive">{{ i18n "game_section_exclusive" | default "Exclusive" }}</span>
+                        {{ end }}
+                      </div>
+                      <div class="game-body">
+                        <h4>{{ .title }}</h4>
+                        <div class="game-actions">
+                          <a class="btn btn-primary" href="#">{{ i18n "game_button_play" | default "Play" }}</a>
+                          <a class="btn btn-ghost" href="#">{{ i18n "game_button_demo" | default "Demo" }}</a>
+                        </div>
+                      </div>
+                    </article>
+                  {{ end }}
+                </div>
+              </div>
+            {{ end }}
+          </div>
+        </section>
+      {{ end }}
+
+      {{ $liveData := or (index site.Data.live_results .Site.Language.Lang) (index site.Data.live_results $fallbackLang) }}
+      {{ with $liveData }}
+        <section class="live-feed">
+          <div class="container">
+            <div class="section-heading">
+              <h2>{{ .title }}</h2>
+              <p>Styled table for recent winners.</p>
+            </div>
+            <div class="table-scroll">
+              <table>
+                {{ with .columns }}
+                  <thead>
+                    <tr>
+                      {{ range . }}
+                        <th scope="col">{{ . }}</th>
+                      {{ end }}
+                    </tr>
+                  </thead>
+                {{ end }}
+                <tbody>
+                  {{ range .rows }}
+                    <tr>
+                      <td>{{ .player }}</td>
+                      <td>{{ .game }}</td>
+                      <td>{{ .bet }}</td>
+                      <td>{{ .win }}</td>
+                      <td>{{ .time }}</td>
+                    </tr>
+                  {{ end }}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+      {{ end }}
+
+      {{ with $brand.banking }}
+        <section class="banking">
+          <div class="container">
+            <div class="section-heading">
+              <h2>{{ .title }}</h2>
+            </div>
+            <div class="payment-grid">
+              {{ range .methods }}
+                {{ $method := . }}
+                <article class="payment-card" aria-label="{{ $method.name }}">
+                  {{ with $method.icon }}
+                    <img src="{{ . | relURL }}" alt="{{ $method.name }}">
+                  {{ else }}
+                    <span class="chip">{{ $method.name }}</span>
+                  {{ end }}
+                </article>
+              {{ end }}
+            </div>
+          </div>
+        </section>
+      {{ end }}
+
+      {{ if gt (len .Content) 0 }}
+        <section class="article container" id="article">
+          {{ .Content }}
+        </section>
+      {{ end }}
+
+      {{ with $brand.cta }}
+        <section class="cta">
+          <div class="container cta-card">
+            <div>
+              {{ with .badge }}
+                <span class="hero-badge">{{ . }}</span>
+              {{ end }}
+              <h2>{{ .title }}</h2>
+              <p>{{ .text }}</p>
+            </div>
+            <div class="hero-actions">
+              {{ with .primary_cta }}
+                {{ $label := .text }}
+                {{ with .i18n_id }}
+                  {{ $translated := i18n . }}
+                  {{ if $translated }}{{ $label = $translated }}{{ end }}
+                {{ end }}
+                <a class="btn btn-primary" href="{{ .url }}">{{ $label }}</a>
+              {{ end }}
+              {{ with .secondary_cta }}
+                {{ $label := .text }}
+                {{ with .i18n_id }}
+                  {{ $translated := i18n . }}
+                  {{ if $translated }}{{ $label = $translated }}{{ end }}
+                {{ end }}
+                <a class="btn btn-ghost" href="{{ .url }}">{{ $label }}</a>
+              {{ end }}
+            </div>
+          </div>
+        </section>
+      {{ end }}
+    </main>
+
+    <footer class="brand2-footer">
+      <div class="container footer-grid">
+        <div>
+          <p>&copy; {{ now.Format "2006" }} {{ $org.name }}. {{ i18n "footer_rights" | default "All rights reserved." }}</p>
+          <p>{{ .Title }} — Caspero inspired variant.</p>
+        </div>
+        <div class="footer-nav">
+          <div class="footer-links">
+            {{ with $lang.subnav }}
+              {{ range sort . "weight" }}
+                <a href="{{ .url | relLangURL }}">{{ .name }}</a>
+              {{ end }}
+            {{ end }}
+          </div>
+          <div class="footer-links footer-links--secondary">
+            <a href="#about">{{ i18n "footer_about" | default "About us" }}</a>
+            <a href="#faq">{{ i18n "footer_faq" | default "FAQ" }}</a>
+            <a href="#support">{{ i18n "footer_support" | default "Support" }}</a>
+            <a href="#terms">{{ i18n "footer_terms" | default "Terms" }}</a>
+          </div>
+        </div>
+        {{ if $brand.providers }}
+          <div class="provider-marquee">
+            <div class="provider-grid">
+              {{ range $brand.providers }}
+                {{ $provider := . }}
+                {{ $name := or $provider.name (humanize (replace (replace (path.Base $provider.logo) "_" " ") "-" " ")) }}
+                {{ $slug := lower (replace (replace $name " " "-") "_" "-") }}
+                {{ $hashSource := or $provider.logo $name }}
+                {{ $hash := sha1 $hashSource }}
+                {{ $prefix := substr $hash 0 6 }}
+                {{ $hexVal := int (printf "0x%s" $prefix) }}
+                {{ $hue := mod $hexVal 360 }}
+                <div class="provider-card" data-provider="{{ $slug }}" style="--provider-hue: {{ $hue }};">
+                  <img src="{{ $provider.logo | relURL }}" alt="{{ $name }}" class="provider-logo">
+                </div>
+              {{ end }}
+            </div>
+          </div>
+        {{ else }}
+          {{ $providerFiles := readDir "static/images/providers" }}
+          {{ $providerImages := slice }}
+          {{ range $providerFiles }}
+            {{ $ext := lower (path.Ext .Name) }}
+            {{ if in (slice ".png" ".jpg" ".jpeg" ".svg" ".webp") $ext }}
+              {{ $providerImages = $providerImages | append . }}
+            {{ end }}
+          {{ end }}
+          {{ if gt (len $providerImages) 0 }}
+            <div class="provider-marquee">
+              <div class="provider-grid">
+                {{ range sort $providerImages "Name" }}
+                  {{ $base := replace .Name (path.Ext .Name) "" }}
+                  {{ $label := humanize (replace (replace $base "_" " ") "-" " ") }}
+                  {{ $slug := lower (replace (replace $base " " "-") "_" "-") }}
+                  {{ $hash := sha1 $slug }}
+                  {{ $prefix := substr $hash 0 6 }}
+                  {{ $hexVal := int (printf "0x%s" $prefix) }}
+                  {{ $hue := mod $hexVal 360 }}
+                  <div class="provider-card" data-provider="{{ $slug }}" style="--provider-hue: {{ $hue }};">
+                    <img src="{{ (printf "/images/providers/%s" .Name) | relURL }}" alt="{{ $label }}" class="provider-logo">
+                  </div>
+                {{ end }}
+              </div>
+            </div>
+          {{ end }}
+        {{ end }}
+        {{ with $brand.trust }}
+          <div class="trust-strip">
+            <div class="trust-heading">
+              <small>{{ .title }}</small>
+            </div>
+            <div class="trust-grid">
+              {{ range .badges }}
+                <article class="trust-badge">
+                  <strong>{{ .label }}</strong>
+                  {{ with .note }}<span>{{ . }}</span>{{ end }}
+                </article>
+              {{ end }}
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    </footer>
+  </div>
+
+  {{ partial "popup.html" . }}
+  <script src="{{ "js/popup.js" | relURL }}"></script>
+  <button class="back-to-top" type="button" aria-label="{{ i18n "back_to_top" | default "Back to top" }}">↑</button>
+  <script>
+    document.querySelectorAll('.animate-on-scroll').forEach((el) => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+          }
+        });
+      }, { threshold: 0.3 });
+      observer.observe(el);
+    });
+
+    const bodyEl = document.body;
+    const heroGift = document.querySelector('.hero-gift');
+    if (heroGift) {
+      const giftIcon = heroGift.querySelector('img');
+      const duration = 2400;
+
+      const bounce = (time) => {
+        const progress = (time % duration) / duration;
+        const eased = Math.sin(progress * Math.PI);
+        heroGift.style.transform = `translateY(${eased * -12}px)`;
+        requestAnimationFrame(bounce);
+      };
+      requestAnimationFrame(bounce);
+
+      const jitter = () => {
+        if (!giftIcon) return;
+        const rotate = (Math.random() * 6) - 3;
+        const tx = (Math.random() * 4) - 2;
+        const ty = (Math.random() * 4) - 2;
+        giftIcon.style.transform = `translate(${tx}px, ${ty}px) rotate(${rotate}deg)`;
+        giftIcon.style.transformOrigin = 'center';
+        setTimeout(jitter, 180 + Math.random() * 420);
+      };
+      jitter();
+    }
+
+    const backToTop = document.querySelector('.back-to-top');
+    if (backToTop) {
+      const toggleVisibility = () => {
+        if (window.scrollY > 300) {
+          backToTop.classList.add('is-visible');
+        } else {
+          backToTop.classList.remove('is-visible');
+        }
+      };
+      toggleVisibility();
+      window.addEventListener('scroll', toggleVisibility);
+      backToTop.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    }
+
+    const burgerToggle = document.querySelector('.burger-toggle');
+    const primaryNav = document.querySelector('.primary-nav');
+    const navLinks = document.querySelectorAll('.primary-nav a');
+    if (burgerToggle) {
+      burgerToggle.addEventListener('click', () => {
+        bodyEl.classList.toggle('nav-open');
+      });
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          bodyEl.classList.remove('nav-open');
+        });
+      });
+      window.addEventListener('resize', () => {
+        if (window.innerWidth > 768) {
+          bodyEl.classList.remove('nav-open');
+        }
+      });
+      if (primaryNav) {
+        document.addEventListener('click', (event) => {
+          if (!bodyEl.classList.contains('nav-open')) return;
+          if (!burgerToggle.contains(event.target) && !primaryNav.contains(event.target)) {
+            bodyEl.classList.remove('nav-open');
+          }
+        });
+      }
+    }
+  </script>
+</body>
+</html>

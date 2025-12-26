@@ -1,0 +1,26 @@
+{{ $popupData := site.Data.popup }}
+{{ if $popupData }}
+  {{ $lang := .Site.Language.Lang }}
+  {{ $fallbackLang := site.Params.defaultLang | default "cs" }}
+  {{ $content := or (index $popupData $lang) (index $popupData $fallbackLang) }}
+  {{ $settings := index $popupData "settings" }}
+  {{ $delay := 30000 }}
+  {{ if $settings }}
+    {{ with index $settings "delay_ms" }}
+      {{ $delay = . }}
+    {{ end }}
+  {{ end }}
+  {{ with $content }}
+    {{ $image := .image | default "" }}
+    <div id="offer-popup" class="popup-overlay" role="dialog" aria-modal="true" aria-labelledby="popup-title" data-delay="{{ $delay }}">
+      <div class="popup-content" {{ if $image }}style="background-image: url('{{ $image }}');"{{ end }}>
+        <button id="popup-close" class="popup-close" aria-label="Close">&times;</button>
+        <h2 id="popup-title" class="popup-title">{{ .title }}</h2>
+        <p class="popup-text">{{ .text }}</p>
+        {{ with .button }}
+          <a href="{{ .link }}" class="popup-btn">{{ .text }}</a>
+        {{ end }}
+      </div>
+    </div>
+  {{ end }}
+{{ end }}

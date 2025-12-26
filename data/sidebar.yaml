@@ -1,0 +1,441 @@
+pl:
+  - name: "Kasyno"
+    url: "#"
+    weight: 1
+    pre: "<img src='/images/ico/casino.svg' alt='Kasyno' class='sidebar-icon'>"
+  - name: "Kasyno na zywo"
+    url: "#"
+    weight: 2
+    pre: "<img src='/images/ico/live-casino.svg' alt='Kasyno na zywo' class='sidebar-icon'>"
+  - name: "Promocje"
+    url: "#"
+    weight: 3
+    pre: "<img src='/images/ico/promotions.svg' alt='Promocje' class='sidebar-icon'>"
+  - name: "Turnieje"
+    url: "#"
+    weight: 4
+    pre: "<img src='/images/ico/tournaments.svg' alt='Turnieje' class='sidebar-icon'>"
+  - name: "Loterie"
+    url: "#"
+    weight: 5
+    pre: "<img src='/images/ico/lottery.svg' alt='Loterie' class='sidebar-icon'>"
+  - name: "Wyscigi"
+    url: "#"
+    weight: 6
+    pre: "<img src='/images/ico/races.svg' alt='Wyscigi' class='sidebar-icon'>"
+  - name: "Kalendarz"
+    url: "#"
+    weight: 7
+    pre: "<img src='/images/ico/calendar.svg' alt='Kalendarz' class='sidebar-icon'>"
+  - name: "Kolo fortuny"
+    url: "#"
+    weight: 8
+    pre: "<img src='/images/ico/wheel.svg' alt='Kolo fortuny' class='sidebar-icon'>"
+  - name: "Skrzynie"
+    url: "#"
+    weight: 9
+    pre: "<img src='/images/ico/chest.svg' alt='Skrzynie' class='sidebar-icon'>"
+  - name: "Klub VIP"
+    url: "#"
+    weight: 10
+    pre: "<img src='/images/ico/vip.svg' alt='Klub VIP' class='sidebar-icon'>"
+  - name: "Sklep"
+    url: "#"
+    weight: 11
+    pre: "<img src='/images/ico/shop.svg' alt='Sklep' class='sidebar-icon'>"
+  - name: "Ranking"
+    url: "#"
+    weight: 12
+    pre: "<img src='/images/ico/ranking.svg' alt='Ranking' class='sidebar-icon'>"
+cs:
+  - name: "Kasino"
+    url: "#"
+    weight: 1
+    pre: "<img src='/images/ico/casino.svg' alt='Kasino' class='sidebar-icon'>"
+  - name: "Zive kasino"
+    url: "#"
+    weight: 2
+    pre: "<img src='/images/ico/live-casino.svg' alt='Zive kasino' class='sidebar-icon'>"
+  - name: "Promoce"
+    url: "#"
+    weight: 3
+    pre: "<img src='/images/ico/promotions.svg' alt='Promoce' class='sidebar-icon'>"
+  - name: "Turnaje"
+    url: "#"
+    weight: 4
+    pre: "<img src='/images/ico/tournaments.svg' alt='Turnaje' class='sidebar-icon'>"
+  - name: "Loterie"
+    url: "#"
+    weight: 5
+    pre: "<img src='/images/ico/lottery.svg' alt='Loterie' class='sidebar-icon'>"
+  - name: "Zavody"
+    url: "#"
+    weight: 6
+    pre: "<img src='/images/ico/races.svg' alt='Zavody' class='sidebar-icon'>"
+  - name: "Kalendar"
+    url: "#"
+    weight: 7
+    pre: "<img src='/images/ico/calendar.svg' alt='Kalendar' class='sidebar-icon'>"
+  - name: "Kolo stesti"
+    url: "#"
+    weight: 8
+    pre: "<img src='/images/ico/wheel.svg' alt='Kolo stesti' class='sidebar-icon'>"
+  - name: "Truhly"
+    url: "#"
+    weight: 9
+    pre: "<img src='/images/ico/chest.svg' alt='Truhly' class='sidebar-icon'>"
+  - name: "VIP klub"
+    url: "#"
+    weight: 10
+    pre: "<img src='/images/ico/vip.svg' alt='VIP klub' class='sidebar-icon'>"
+  - name: "Obchod"
+    url: "#"
+    weight: 11
+    pre: "<img src='/images/ico/shop.svg' alt='Obchod' class='sidebar-icon'>"
+  - name: "Zebricek"
+    url: "#"
+    weight: 12
+    pre: "<img src='/images/ico/ranking.svg' alt='Zebricek' class='sidebar-icon'>"
+hu:
+  - name: "Kaszino"
+    url: "#"
+    weight: 1
+    pre: "<img src='/images/ico/casino.svg' alt='Kaszino' class='sidebar-icon'>"
+  - name: "Elo kaszino"
+    url: "#"
+    weight: 2
+    pre: "<img src='/images/ico/live-casino.svg' alt='Elo kaszino' class='sidebar-icon'>"
+  - name: "Akciok"
+    url: "#"
+    weight: 3
+    pre: "<img src='/images/ico/promotions.svg' alt='Akciok' class='sidebar-icon'>"
+  - name: "Versenyek"
+    url: "#"
+    weight: 4
+    pre: "<img src='/images/ico/tournaments.svg' alt='Versenyek' class='sidebar-icon'>"
+  - name: "Sorsolasok"
+    url: "#"
+    weight: 5
+    pre: "<img src='/images/ico/lottery.svg' alt='Sorsolasok' class='sidebar-icon'>"
+  - name: "Futasok"
+    url: "#"
+    weight: 6
+    pre: "<img src='/images/ico/races.svg' alt='Futasok' class='sidebar-icon'>"
+  - name: "Naptar"
+    url: "#"
+    weight: 7
+    pre: "<img src='/images/ico/calendar.svg' alt='Naptar' class='sidebar-icon'>"
+  - name: "Szerencsekerek"
+    url: "#"
+    weight: 8
+    pre: "<img src='/images/ico/wheel.svg' alt='Szerencsekerek' class='sidebar-icon'>"
+  - name: "Ladak"
+    url: "#"
+    weight: 9
+    pre: "<img src='/images/ico/chest.svg' alt='Ladak' class='sidebar-icon'>"
+  - name: "VIP klub"
+    url: "#"
+    weight: 10
+    pre: "<img src='/images/ico/vip.svg' alt='VIP klub' class='sidebar-icon'>"
+  - name: "Bolt"
+    url: "#"
+    weight: 11
+    pre: "<img src='/images/ico/shop.svg' alt='Bolt' class='sidebar-icon'>"
+  - name: "Ranglista"
+    url: "#"
+    weight: 12
+    pre: "<img src='/images/ico/ranking.svg' alt='Ranglista' class='sidebar-icon'>"
+de:
+  - name: "Casino"
+    url: "#"
+    weight: 1
+    pre: "<img src='/images/ico/casino.svg' alt='Casino' class='sidebar-icon'>"
+  - name: "Live-Casino"
+    url: "#"
+    weight: 2
+    pre: "<img src='/images/ico/live-casino.svg' alt='Live-Casino' class='sidebar-icon'>"
+  - name: "Promotionen"
+    url: "#"
+    weight: 3
+    pre: "<img src='/images/ico/promotions.svg' alt='Promotionen' class='sidebar-icon'>"
+  - name: "Turniere"
+    url: "#"
+    weight: 4
+    pre: "<img src='/images/ico/tournaments.svg' alt='Turniere' class='sidebar-icon'>"
+  - name: "Lotterien"
+    url: "#"
+    weight: 5
+    pre: "<img src='/images/ico/lottery.svg' alt='Lotterien' class='sidebar-icon'>"
+  - name: "Rennen"
+    url: "#"
+    weight: 6
+    pre: "<img src='/images/ico/races.svg' alt='Rennen' class='sidebar-icon'>"
+  - name: "Kalender"
+    url: "#"
+    weight: 7
+    pre: "<img src='/images/ico/calendar.svg' alt='Kalender' class='sidebar-icon'>"
+  - name: "Glucksrad"
+    url: "#"
+    weight: 8
+    pre: "<img src='/images/ico/wheel.svg' alt='Glucksrad' class='sidebar-icon'>"
+  - name: "Truhen"
+    url: "#"
+    weight: 9
+    pre: "<img src='/images/ico/chest.svg' alt='Truhen' class='sidebar-icon'>"
+  - name: "VIP-Club"
+    url: "#"
+    weight: 10
+    pre: "<img src='/images/ico/vip.svg' alt='VIP-Club' class='sidebar-icon'>"
+  - name: "Shop"
+    url: "#"
+    weight: 11
+    pre: "<img src='/images/ico/shop.svg' alt='Shop' class='sidebar-icon'>"
+  - name: "Rangliste"
+    url: "#"
+    weight: 12
+    pre: "<img src='/images/ico/ranking.svg' alt='Rangliste' class='sidebar-icon'>"
+pt:
+  - name: "Cassino"
+    url: "#"
+    weight: 1
+    pre: "<img src='/images/ico/casino.svg' alt='Cassino' class='sidebar-icon'>"
+  - name: "Cassino ao vivo"
+    url: "#"
+    weight: 2
+    pre: "<img src='/images/ico/live-casino.svg' alt='Cassino ao vivo' class='sidebar-icon'>"
+  - name: "Promocoes"
+    url: "#"
+    weight: 3
+    pre: "<img src='/images/ico/promotions.svg' alt='Promocoes' class='sidebar-icon'>"
+  - name: "Torneios"
+    url: "#"
+    weight: 4
+    pre: "<img src='/images/ico/tournaments.svg' alt='Torneios' class='sidebar-icon'>"
+  - name: "Loterias"
+    url: "#"
+    weight: 5
+    pre: "<img src='/images/ico/lottery.svg' alt='Loterias' class='sidebar-icon'>"
+  - name: "Corridas"
+    url: "#"
+    weight: 6
+    pre: "<img src='/images/ico/races.svg' alt='Corridas' class='sidebar-icon'>"
+  - name: "Calendario"
+    url: "#"
+    weight: 7
+    pre: "<img src='/images/ico/calendar.svg' alt='Calendario' class='sidebar-icon'>"
+  - name: "Roda da fortuna"
+    url: "#"
+    weight: 8
+    pre: "<img src='/images/ico/wheel.svg' alt='Roda da fortuna' class='sidebar-icon'>"
+  - name: "Baus"
+    url: "#"
+    weight: 9
+    pre: "<img src='/images/ico/chest.svg' alt='Baus' class='sidebar-icon'>"
+  - name: "Clube VIP"
+    url: "#"
+    weight: 10
+    pre: "<img src='/images/ico/vip.svg' alt='Clube VIP' class='sidebar-icon'>"
+  - name: "Loja"
+    url: "#"
+    weight: 11
+    pre: "<img src='/images/ico/shop.svg' alt='Loja' class='sidebar-icon'>"
+  - name: "Ranking"
+    url: "#"
+    weight: 12
+    pre: "<img src='/images/ico/ranking.svg' alt='Ranking' class='sidebar-icon'>"
+au:
+  - name: "Casino"
+    url: "#"
+    weight: 1
+    pre: "<img src='/images/ico/casino.svg' alt='Casino' class='sidebar-icon'>"
+  - name: "Live Casino"
+    url: "#"
+    weight: 2
+    pre: "<img src='/images/ico/live-casino.svg' alt='Live Casino' class='sidebar-icon'>"
+  - name: "Promotions"
+    url: "#"
+    weight: 3
+    pre: "<img src='/images/ico/promotions.svg' alt='Promotions' class='sidebar-icon'>"
+  - name: "Tournaments"
+    url: "#"
+    weight: 4
+    pre: "<img src='/images/ico/tournaments.svg' alt='Tournaments' class='sidebar-icon'>"
+  - name: "Lotteries"
+    url: "#"
+    weight: 5
+    pre: "<img src='/images/ico/lottery.svg' alt='Lotteries' class='sidebar-icon'>"
+  - name: "Races"
+    url: "#"
+    weight: 6
+    pre: "<img src='/images/ico/races.svg' alt='Races' class='sidebar-icon'>"
+  - name: "Calendar"
+    url: "#"
+    weight: 7
+    pre: "<img src='/images/ico/calendar.svg' alt='Calendar' class='sidebar-icon'>"
+  - name: "Wheel of Fortune"
+    url: "#"
+    weight: 8
+    pre: "<img src='/images/ico/wheel.svg' alt='Wheel of Fortune' class='sidebar-icon'>"
+  - name: "Chests"
+    url: "#"
+    weight: 9
+    pre: "<img src='/images/ico/chest.svg' alt='Chests' class='sidebar-icon'>"
+  - name: "VIP Club"
+    url: "#"
+    weight: 10
+    pre: "<img src='/images/ico/vip.svg' alt='VIP Club' class='sidebar-icon'>"
+  - name: "Shop"
+    url: "#"
+    weight: 11
+    pre: "<img src='/images/ico/shop.svg' alt='Shop' class='sidebar-icon'>"
+  - name: "Leaderboard"
+    url: "#"
+    weight: 12
+    pre: "<img src='/images/ico/ranking.svg' alt='Leaderboard' class='sidebar-icon'>"
+fr:
+  - name: "Casino"
+    url: "#"
+    weight: 1
+    pre: "<img src='/images/ico/casino.svg' alt='Casino' class='sidebar-icon'>"
+  - name: "Casino en direct"
+    url: "#"
+    weight: 2
+    pre: "<img src='/images/ico/live-casino.svg' alt='Casino en direct' class='sidebar-icon'>"
+  - name: "Promotions"
+    url: "#"
+    weight: 3
+    pre: "<img src='/images/ico/promotions.svg' alt='Promotions' class='sidebar-icon'>"
+  - name: "Tournois"
+    url: "#"
+    weight: 4
+    pre: "<img src='/images/ico/tournaments.svg' alt='Tournois' class='sidebar-icon'>"
+  - name: "Loteries"
+    url: "#"
+    weight: 5
+    pre: "<img src='/images/ico/lottery.svg' alt='Loteries' class='sidebar-icon'>"
+  - name: "Courses"
+    url: "#"
+    weight: 6
+    pre: "<img src='/images/ico/races.svg' alt='Courses' class='sidebar-icon'>"
+  - name: "Calendrier"
+    url: "#"
+    weight: 7
+    pre: "<img src='/images/ico/calendar.svg' alt='Calendrier' class='sidebar-icon'>"
+  - name: "Roue de la fortune"
+    url: "#"
+    weight: 8
+    pre: "<img src='/images/ico/wheel.svg' alt='Roue de la fortune' class='sidebar-icon'>"
+  - name: "Coffres"
+    url: "#"
+    weight: 9
+    pre: "<img src='/images/ico/chest.svg' alt='Coffres' class='sidebar-icon'>"
+  - name: "Club VIP"
+    url: "#"
+    weight: 10
+    pre: "<img src='/images/ico/vip.svg' alt='Club VIP' class='sidebar-icon'>"
+  - name: "Boutique"
+    url: "#"
+    weight: 11
+    pre: "<img src='/images/ico/shop.svg' alt='Boutique' class='sidebar-icon'>"
+  - name: "Classement"
+    url: "#"
+    weight: 12
+    pre: "<img src='/images/ico/ranking.svg' alt='Classement' class='sidebar-icon'>"
+ch:
+  - name: "Casino"
+    url: "#"
+    weight: 1
+    pre: "<img src='/images/ico/casino.svg' alt='Casino' class='sidebar-icon'>"
+  - name: "Live-Casino"
+    url: "#"
+    weight: 2
+    pre: "<img src='/images/ico/live-casino.svg' alt='Live-Casino' class='sidebar-icon'>"
+  - name: "Aktionen"
+    url: "#"
+    weight: 3
+    pre: "<img src='/images/ico/promotions.svg' alt='Aktionen' class='sidebar-icon'>"
+  - name: "Turniere"
+    url: "#"
+    weight: 4
+    pre: "<img src='/images/ico/tournaments.svg' alt='Turniere' class='sidebar-icon'>"
+  - name: "Lotterien"
+    url: "#"
+    weight: 5
+    pre: "<img src='/images/ico/lottery.svg' alt='Lotterien' class='sidebar-icon'>"
+  - name: "Rennen"
+    url: "#"
+    weight: 6
+    pre: "<img src='/images/ico/races.svg' alt='Rennen' class='sidebar-icon'>"
+  - name: "Kalender"
+    url: "#"
+    weight: 7
+    pre: "<img src='/images/ico/calendar.svg' alt='Kalender' class='sidebar-icon'>"
+  - name: "Glucksrad"
+    url: "#"
+    weight: 8
+    pre: "<img src='/images/ico/wheel.svg' alt='Glucksrad' class='sidebar-icon'>"
+  - name: "Truhen"
+    url: "#"
+    weight: 9
+    pre: "<img src='/images/ico/chest.svg' alt='Truhen' class='sidebar-icon'>"
+  - name: "VIP-Club"
+    url: "#"
+    weight: 10
+    pre: "<img src='/images/ico/vip.svg' alt='VIP-Club' class='sidebar-icon'>"
+  - name: "Shop"
+    url: "#"
+    weight: 11
+    pre: "<img src='/images/ico/shop.svg' alt='Shop' class='sidebar-icon'>"
+  - name: "Rangliste"
+    url: "#"
+    weight: 12
+    pre: "<img src='/images/ico/ranking.svg' alt='Rangliste' class='sidebar-icon'>"
+se:
+  - name: "Casino"
+    url: "#"
+    weight: 1
+    pre: "<img src='/images/ico/casino.svg' alt='Casino' class='sidebar-icon'>"
+  - name: "Live casino"
+    url: "#"
+    weight: 2
+    pre: "<img src='/images/ico/live-casino.svg' alt='Live casino' class='sidebar-icon'>"
+  - name: "Kampanjer"
+    url: "#"
+    weight: 3
+    pre: "<img src='/images/ico/promotions.svg' alt='Kampanjer' class='sidebar-icon'>"
+  - name: "Turneringar"
+    url: "#"
+    weight: 4
+    pre: "<img src='/images/ico/tournaments.svg' alt='Turneringar' class='sidebar-icon'>"
+  - name: "Lotterier"
+    url: "#"
+    weight: 5
+    pre: "<img src='/images/ico/lottery.svg' alt='Lotterier' class='sidebar-icon'>"
+  - name: "Lopp"
+    url: "#"
+    weight: 6
+    pre: "<img src='/images/ico/races.svg' alt='Lopp' class='sidebar-icon'>"
+  - name: "Kalender"
+    url: "#"
+    weight: 7
+    pre: "<img src='/images/ico/calendar.svg' alt='Kalender' class='sidebar-icon'>"
+  - name: "Lyckohjul"
+    url: "#"
+    weight: 8
+    pre: "<img src='/images/ico/wheel.svg' alt='Lyckohjul' class='sidebar-icon'>"
+  - name: "Kistor"
+    url: "#"
+    weight: 9
+    pre: "<img src='/images/ico/chest.svg' alt='Kistor' class='sidebar-icon'>"
+  - name: "VIP-klubb"
+    url: "#"
+    weight: 10
+    pre: "<img src='/images/ico/vip.svg' alt='VIP-klubb' class='sidebar-icon'>"
+  - name: "Butik"
+    url: "#"
+    weight: 11
+    pre: "<img src='/images/ico/shop.svg' alt='Butik' class='sidebar-icon'>"
+  - name: "Topplista"
+    url: "#"
+    weight: 12
+    pre: "<img src='/images/ico/ranking.svg' alt='Topplista' class='sidebar-icon'>"

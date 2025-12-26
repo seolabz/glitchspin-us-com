@@ -1,0 +1,26 @@
+﻿pt:
+  title: "Uvítací nabídka Pelican Casino - 150 % až do 62 811 Kč"
+  text: "Získejte 150 % bonus až do 62 811 Kč, 200 volných zatočení a navíc bonus bez vkladu 15 € (314 Kč)! Připojte se k Pelican Casino ještě dnes a začněte hrát."
+  image: "/images/slide_main-pelican.jpg"
+  button:
+    text: "Získat uvítací bonus"
+    link: "#"
+
+pl:
+  title: "Pakiet powitalny Pelican Casino - 150% do 62 811 CZK"
+  text: "Odbierz 150% bonus do 62 811 CZK, 200 darmowych spinów i 15 € bez depozytu! Dołącz do Pelican Casino już dziś i zacznij grać."
+  image: "/images/pelican-banner.webp"
+  button:
+    text: "Odbierz bonus powitalny"
+    link: "#"
+
+hu:
+  title: "Pelican Casino üdvözlő bónusz - 150% akár 62 811 CZK-ig"
+  text: "Szerezd meg a 150%-os bónuszt akár 62 811 CZK értékben, 200 ingyenes pörgetéssel és 15 € befizetés nélküli bónusszal! Csatlakozz a Pelican Casino-hoz még ma."
+  image: "/images/pelican-banner.webp"
+  button:
+    text: "Bónusz igénylése"
+    link: "#"
+
+settings:
+  delay_ms: 30000

@@ -1,0 +1,74 @@
+<aside class="sidebar" id="sidebar">
+  {{ $siteData := site.Data.site }}
+  {{ $organization := $siteData.organization }}
+  <div class="logo">
+    {{ with $organization.logo }}
+      <img src="{{ . | relURL }}" alt="{{ i18n "sidebar_logo_alt" | default site.Title }}">
+    {{ else }}
+      <span class="text-logo">{{ site.Title }}</span>
+    {{ end }}
+  </div>
+
+  {{ $lang := .Site.Language.Lang }}
+  {{ $sidebarData := site.Data.sidebar }}
+  {{ $items := slice }}
+  {{ with $sidebarData }}
+    {{ with index . $lang }}
+      {{ $items = . }}
+    {{ end }}
+  {{ end }}
+
+  <nav class="menu">
+    {{ if gt (len $items) 0 }}
+      {{ range sort $items "weight" }}
+        <a href="{{ .url | default "/" }}">
+          <p class="icon">
+            {{ if .pre }}
+              {{ .pre | safeHTML }}
+            {{ else if .icon }}
+              <img src="{{ .icon | relURL }}" alt="{{ .name }}" class="sidebar-icon">
+            {{ end }}
+          </p>
+          {{ .name }}
+        </a>
+      {{ end }}
+    {{ else }}
+      {{ range .Site.Menus.sidebar }}
+        <a href="{{ .URL }}">
+          <p class="icon">
+            {{ if .Pre }}{{ .Pre | safeHTML }}{{ end }}
+          </p>
+          {{ .Name }}
+        </a>
+      {{ end }}
+    {{ end }}
+  </nav>
+
+  <div class="sidebar-bottom">
+    <div class="language-switcher">
+      <div class="lang-current">
+        <img src="{{ printf "/flags/%s.png" .Site.Language.Lang | relURL }}" alt="{{ i18n "flag_icon_alt" (dict "Language" .Site.Language.LanguageName) | default .Site.Language.LanguageName }}" class="flag-icon">
+        {{ .Site.Language.LanguageName }}
+        <span class="dropdown-arrow"></span>
+      </div>
+      <div class="lang-dropdown">
+        {{ range .Site.Languages }}
+          {{ if ne .Lang $.Site.Language.Lang }}
+            {{ $alt := first 1 (where $.Translations "Lang" .Lang) }}
+            {{ if gt (len $alt) 0 }}
+              <a href="{{ (index $alt 0).RelPermalink }}" class="lang-option">
+                <img src="{{ printf "/flags/%s.png" .Lang | relURL }}" alt="{{ i18n "flag_icon_alt" (dict "Language" .LanguageName) | default .LanguageName }}" class="flag-icon">
+                {{ .LanguageName }}
+              </a>
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+
+    <a href="#" class="support-btn">
+      <i class="support-icon">?</i>
+      {{ i18n "sidebar_support_text" | default "Support" }}
+    </a>
+  </div>
+</aside>

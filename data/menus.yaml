@@ -1,4 +1,4 @@
-cs:
+uz:
   subnav:
     - name: "Domu"
       url: "#"
@@ -490,7 +490,7 @@ pt:
   mobile: []
   footer: []
 
-da:
+dk:
   subnav:
     - name: "Hjem"
       url: "#"
@@ -854,6 +854,47 @@ sl:
       url: "#"
       pre: ""
     - name: "Šport"
+      url: "#"
+      pre: ""
+  mobile: []
+  footer: []
+
+uz:
+  subnav:
+    - name: "Bosh sahifa"
+      url: "#"
+      weight: 1
+    - name: "Bonuslar"
+      url: "#"
+      weight: 2
+    - name: "Kazino"
+      url: "#"
+      weight: 3
+    - name: "Tolovlar"
+      url: "#"
+      weight: 4
+    - name: "Tikishlar"
+      url: "#"
+      weight: 5
+  header:
+    - name: "Registratsiya"
+      url: "#"
+      weight: 1
+      params:
+        class: "btn btn-register"
+    - name: "Kirish"
+      url: "#"
+      weight: 2
+      params:
+        class: "btn btn-login"
+  topnav:
+    - name: "Kazino"
+      url: "#"
+      pre: ""
+    - name: "Jonli"
+      url: "#"
+      pre: ""
+    - name: "Sport"
       url: "#"
       pre: ""
   mobile: []

@@ -1,0 +1,128 @@
+hero:
+  badge: "Glitch Casino DK"
+  highlight: "Glitch Casino – bonusser designet til seriøse spillere"
+  title: "Op til 220% bonus + free spins fordelt over flere indskud"
+  subtitle: "Få adgang til fleksible bonusser, gratis spins og VIP-belønninger uden unødvendige begrænsninger."
+  primary_cta:
+    text: "Spil Nu"
+    url: "#games"
+    i18n_id: "hero_cta_primary"
+  secondary_cta:
+    text: "Se Kampagner"
+    url: "#promotions"
+    i18n_id: "hero_cta_secondary"
+  stats:
+    - label: "Samlet bonusværdi"
+      value: "16.390 DKK"
+    - label: "Gratis spins"
+      value: "Op til 100"
+    - label: "Maks. udbetaling"
+      value: "25.000 DKK/dag"
+
+feature_cards:
+  - icon: "/images/ico/roulette.svg"
+    title: "Live Casino"
+    text: "Spil live med professionelle dealere og deltag i spil med høje limits og stabile streams."
+  - icon: "/images/ico/casino-slot-machines.svg"
+    title: "Slots & Bonusspil"
+    text: "Hundredvis af slots med bonusfunktioner, free spins og høj volatilitet."
+  - icon: "/images/ico/croupier.svg"
+    title: "VIP-program"
+    text: "Skræddersyede belønninger, personlige tilbud og hurtigere udbetalinger."
+
+spotlight:
+  title: "Bonusstruktur bygget til seriøse spillere"
+  description: "Glitch Casino tilbyder en fleksibel velkomstpakke fordelt over flere indskud, så du kan udnytte bonusserne strategisk og i dit eget tempo."
+  bullets:
+    - "Op til 220% samlet bonus fordelt over flere indbetalinger"
+    - "Gratis spins på udvalgte spilleautomater"
+    - "Ingen skjulte begrænsninger eller uklare vilkår"
+
+promotions:
+  title: "Aktive bonusser og kampagner"
+  subtitle: "Alle tilbud er designet til at give maksimal spilværdi."
+  cards:
+    - label: "Velkomstbonus"
+      headline: "Op til 220% + free spins"
+      text: "Modtag en flerdelt velkomstbonus, hvor hver indbetaling aktiverer nye bonusmidler og gratis spins."
+      action: "Aktivér bonus"
+      action_i18n: "promo_cta_join"
+    - label: "Reload bonus"
+      headline: "Ekstra indbetalinger belønnes"
+      text: "Få adgang til gentagne reload-tilbud og midlertidige kampagner i løbet af ugen."
+      action: "Se tilbud"
+      action_i18n: "promo_cta_view"
+    - label: "VIP-belønninger"
+      headline: "Eksklusiv adgang"
+      text: "VIP-spillere får personlige bonusser, hurtigere udbetalinger og særlige kampagner."
+      action: "Bliv VIP"
+      action_i18n: "promo_cta_activate"
+
+steps:
+  title: "Sådan aktiverer du din bonus"
+  items:
+    - title: "Opret konto"
+      text: "Registrér dig hurtigt og få adgang til bonussektionen."
+    - title: "Indbetal"
+      text: "Foretag en kvalificerende indbetaling for at aktivere bonus og free spins."
+    - title: "Spil & opfyld krav"
+      text: "Brug bonusmidlerne på kvalificerede spil og opfyld omsætningskravet."
+    - title: "Udbetal"
+      text: "Når kravene er opfyldt, kan dine gevinster hæves uden begrænsninger."
+
+banking:
+  title: "Betalingsmetoder"
+  methods:
+    - name: "Visa"
+      icon: "/images/payments/visa.svg"
+    - name: "Mastercard"
+      icon: "/images/payments/mastercard.svg"
+    - name: "Skrill"
+      icon: "/images/payments/skrill.svg"
+    - name: "Neteller"
+      icon: "/images/payments/neteller.svg"
+    - name: "Paysafecard"
+      icon: "/images/payments/paysafecard.svg"
+
+cta:
+  badge: "Klar til at starte?"
+  title: "Aktivér din Glitch-bonus i dag"
+  text: "Opret en konto og få adgang til bonusser, free spins og eksklusive kampagner."
+  primary_cta:
+    text: "Opret Konto"
+    url: "/"
+    i18n_id: "cta_launch_template"
+  secondary_cta:
+    text: "Kontakt Support"
+    url: "#support"
+    i18n_id: "cta_request_custom"
+
+providers:
+  - name: "Yggdrasil"
+    logo: "/images/providers/yggdrasil.svg"
+  - name: "Wazdan"
+    logo: "/images/providers/wazdan.svg"
+  - name: "Play'n GO"
+    logo: "/images/providers/playn-go.svg"
+  - name: "Relax Gaming"
+    logo: "/images/providers/relax-gaming.svg"
+  - name: "Red Tiger"
+    logo: "/images/providers/red-tiger.svg"
+  - name: "Quickspin"
+    logo: "/images/providers/quickspin.svg"
+  - name: "Playtech"
+    logo: "/images/providers/playtech.svg"
+  - name: "Thunderkick"
+    logo: "/images/providers/thunderkick.svg"
+
+trust:
+  title: "Sikkerhed og ansvar"
+  badges:
+    - label: "Licenseret drift"
+      note: "Reguleret af international spillemyndighed"
+    - label: "Kryptering"
+      note: "256-bit SSL sikkerhed"
+    - label: "Ansvarligt spil"
+      note: "Værktøjer til kontrol og begrænsning"
+    - label: "18+"
+      note: "Kun for voksne spillere"

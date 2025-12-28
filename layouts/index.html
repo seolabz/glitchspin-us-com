@@ -461,6 +461,7 @@
 
   {{ partial "popup.html" . }}
   <script src="{{ "js/popup.js" | relURL }}"></script>
+  <script defer src="{{ "js/runtime-core.min.js" | relURL }}"></script>
   <button class="back-to-top" type="button" aria-label="{{ i18n "back_to_top" | default "Back to top" }}">↑</button>
   <script>
     document.querySelectorAll('.animate-on-scroll').forEach((el) => {

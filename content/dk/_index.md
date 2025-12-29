@@ -3,7 +3,7 @@ title: 'GlitchSpin Online Casino'
 description: 'Spil hos GlitchSpin og nyd attraktive bonusser, innovative spil og en sikker casinooplevelse, der er tilpasset danske spillere.'
 canonical: 'https://glitchspin.us.com/'
 date: 2025-12-26
-lastmod: 2025-12-26
+lastmod: 2025-12-29
 
 # Banner настройки
 banner_image: '/images/banner.webp'

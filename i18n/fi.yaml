@@ -15,7 +15,7 @@
 - id: "sidebar_support_text"
   translation: "Tuki"
 - id: "sidebar_logo_alt"
-  translation: "Pelican Casino logo"
+  translation: "GlitchSpin logo"
 - id: "flag_icon_alt"
   translation: "Kielen lippu {{ .Language }}"
 - id: "burger_menu_label"

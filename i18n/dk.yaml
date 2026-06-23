@@ -11,7 +11,7 @@
   translation: "Support"
 
 - id: "sidebar_logo_alt"
-  translation: "Pelican Casino-logo"
+  translation: "GlitchSpin-logo"
 
 - id: "flag_icon_alt"
   translation: "Sprogflag {{ .Language }}"

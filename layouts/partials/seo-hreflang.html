@@ -1,0 +1,32 @@
+{{- /*
+  SEO: canonical + hreflang (scheme: главная <-> языковая подпапка).
+  Стратегия задаётся в config: [params] canonicalStrategy = "subfolder" | "self"
+    subfolder — canonical главной указывает на языковую подпапку (дубль-контент),
+    self      — каждая версия канонична сама на себя (полноценный мультиязык).
+  Набор hreflang: x-default -> корень, xx-XX -> каждая языковая версия.
+*/ -}}
+{{- $strategy := site.Params.canonicalStrategy | default "self" -}}
+{{- $rootURL := absURL "/" -}}
+{{- $defLang := site.Home.Language.Lang -}}
+{{- range site.Home.AllTranslations -}}
+  {{- if eq .Permalink $rootURL -}}{{- $defLang = .Language.Lang -}}{{- end -}}
+{{- end -}}
+{{- range .AllTranslations }}
+  {{- if eq .Language.Lang $defLang }}
+  <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">
+    {{- if eq $strategy "self" }}
+  <link rel="alternate" hreflang="{{ .Language.LanguageCode }}" href="{{ .Permalink }}">
+    {{- end }}
+  {{- else }}
+  <link rel="alternate" hreflang="{{ .Language.LanguageCode }}" href="{{ .Permalink }}">
+  {{- end }}
+{{- end }}
+{{- if eq $strategy "subfolder" }}
+  {{- $canon := .Permalink -}}
+  {{- range .AllTranslations -}}
+    {{- if ne .Language.Lang $defLang -}}{{- $canon = .Permalink -}}{{- end -}}
+  {{- end }}
+  <link rel="canonical" href="{{ $canon }}">
+{{- else }}
+  <link rel="canonical" href="{{ .Permalink }}">
+{{- end }}

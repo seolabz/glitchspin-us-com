@@ -15,7 +15,7 @@
 - id: "sidebar_support_text"
   translation: "Support"
 - id: "sidebar_logo_alt"
-  translation: "Logo Pelican Casino"
+  translation: "Logo GlitchSpin"
 - id: "flag_icon_alt"
   translation: "Flagge der Sprache {{ .Language }}"
 - id: "burger_menu_label"

@@ -1,6 +1,6 @@
 
 baseURL = "https://glitchspin.us.com/"
-title = "Pelican Casino"
+title = "GlitchSpin Casino"
 defaultContentLanguage = "dk"
 
 [taxonomies]
@@ -12,6 +12,7 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 [params]
 
 defaultLang = "dk"
+canonicalStrategy = "subfolder"
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
@@ -29,7 +30,7 @@ defaultLang = "dk"
   
   #  languageCode = "cs-cz"
   
-  #  title = "Pelican Casino"
+  #  title = "GlitchSpin"
   
   #  contentDir = "content/cs"
   
@@ -41,7 +42,7 @@ defaultLang = "dk"
   
   #  languageCode = "en-gb"
    
-  # title = "Pelican Casino"
+  # title = "GlitchSpin"
     
   #contentDir = "content/en"
 
@@ -49,201 +50,208 @@ defaultLang = "dk"
 #     weight = 3
 #     languageName = "Portuguese"
 # languageCode = "da-dk"
-#     title = "Pelican Casino"
+#     title = "GlitchSpin"
 #     contentDir = "content/pt"
    #  [languages.si]
     #   weight = 4
      #  languageName = "Slovenian"
      #  languageCode = "sl-si"
-     #  title = "Pelican Casino"
+     #  title = "GlitchSpin"
      #  contentDir = "content/si"
  [languages.dk]
   weight = 5
     languageName = "da"
-    languageCode = "da-dk"
-    title = "Pelican Casino"
+    languageCode = "da-DK"
+    title = "GlitchSpin Casino"
     contentDir = "content/dk"
+
+ [languages.da]
+  weight = 6
+    languageName = "Dansk"
+    languageCode = "da-DK"
+    title = "GlitchSpin Casino"
+    contentDir = "content/da"
 
   # [languages.cz]
   #   weight = 1
   #   languageName = "Czech"
   #   languageCode = "cs-cz"
-  #   title = "Pelican Casino"
+  #   title = "GlitchSpin"
   #   contentDir = "content/cz"
 
   # [languages.sk]
   #   weight = 1
   #   languageName = "Slovak"
   #   languageCode = "sk-sk"
-  #   title = "Pelican Casino"
+  #   title = "GlitchSpin"
   #   contentDir = "content/sk"
 
   # [languages.pl]
   #   weight = 1
   #   languageName = "Polish"
   #   languageCode = "pl-pl"
-  #   title = "Pelican Casino"
+  #   title = "GlitchSpin"
   #   contentDir = "content/pl"
 
   # [languages.de]
   #   weight = 1
   #   languageName = "German"
   #   languageCode = "de-de"
-  #   title = "Pelican Casino"
+  #   title = "GlitchSpin"
   #   contentDir = "content/de"
 
   # [languages.at]
   #   weight = 1
   #   languageName = "German (Austria)"
   #   languageCode = "de-at"
-  #   title = "Pelican Casino"
+  #   title = "GlitchSpin"
   #   contentDir = "content/at"
 
   # [languages.ch]
   #   weight = 1
   #   languageName = "German (Switzerland)"
   #   languageCode = "de-ch"
-  #   title = "Pelican Casino"
+  #   title = "GlitchSpin"
   #   contentDir = "content/ch"
 
   # [languages.fr]
   #   weight = 1
   #   languageName = "French"
   #   languageCode = "fr-fr"
-  #   title = "Pelican Casino"
+  #   title = "GlitchSpin"
   #   contentDir = "content/fr"
 
   # [languages.es]
   #   weight = 1
   #   languageName = "Spanish"
   #   languageCode = "es-es"
-  #   title = "Pelican Casino"
+  #   title = "GlitchSpin"
   #   contentDir = "content/es"
 
   # [languages.pt]
   #   weight = 1
   #   languageName = "Portuguese"
   #   languageCode = "pt-pt"
-  #   title = "Pelican Casino"
+  #   title = "GlitchSpin"
   #   contentDir = "content/pt"
 
   # [languages.it]
   #   weight = 1
   #   languageName = "Italian"
   #   languageCode = "it-it"
-  #   title = "Pelican Casino"
+  #   title = "GlitchSpin"
   #   contentDir = "content/it"
 
   # [languages.gr]
   #   weight = 1
   #   languageName = "Greek"
   #   languageCode = "el-gr"
-  #   title = "Pelican Casino"
+  #   title = "GlitchSpin"
   #   contentDir = "content/gr"
 
   # [languages.ro]
   #   weight = 1
   #   languageName = "Romanian"
   #   languageCode = "ro-ro"
-  #   title = "Pelican Casino"
+  #   title = "GlitchSpin"
   #   contentDir = "content/ro"
 
   # [languages.bg]
   #   weight = 1
   #   languageName = "Bulgarian"
   #   languageCode = "bg-bg"
-  #   title = "Pelican Casino"
+  #   title = "GlitchSpin"
   #   contentDir = "content/bg"
 
   # [languages.hu]
   #   weight = 1
   #   languageName = "Hungarian"
   #   languageCode = "hu-hu"
-  #   title = "Pelican Casino"
+  #   title = "GlitchSpin"
   #   contentDir = "content/hu"
 
   # [languages.hr]
   #   weight = 1
   #   languageName = "Croatian"
   #   languageCode = "hr-hr"
-  #   title = "Pelican Casino"
+  #   title = "GlitchSpin"
   #   contentDir = "content/hr"
 
   # [languages.rs]
   #   weight = 1
   #   languageName = "Serbian"
   #   languageCode = "sr-rs"
-  #   title = "Pelican Casino"
+  #   title = "GlitchSpin"
   #   contentDir = "content/rs"
 
   # [languages.si]
   #   weight = 1
   #   languageName = "Slovenian"
   #   languageCode = "sl-si"
-  #   title = "Pelican Casino"
+  #   title = "GlitchSpin"
   #   contentDir = "content/si"
 
   # [languages.ba]
   #   weight = 1
   #   languageName = "Bosnian"
   #   languageCode = "bs-ba"
-  #   title = "Pelican Casino"
+  #   title = "GlitchSpin"
   #   contentDir = "content/ba"
 
   # [languages.mk]
   #   weight = 1
   #   languageName = "Macedonian"
   #   languageCode = "mk-mk"
-  #   title = "Pelican Casino"
+  #   title = "GlitchSpin"
   #   contentDir = "content/mk"
 
   # [languages.al]
   #   weight = 1
   #   languageName = "Albanian"
   #   languageCode = "sq-al"
-  #   title = "Pelican Casino"
+  #   title = "GlitchSpin"
   #   contentDir = "content/al"
 
   # [languages.lv]
   #   weight = 1
   #   languageName = "Latvian"
   #   languageCode = "lv-lv"
-  #   title = "Pelican Casino"
+  #   title = "GlitchSpin"
   #   contentDir = "content/lv"
 
   # [languages.lt]
   #   weight = 1
   #   languageName = "Lithuanian"
   #   languageCode = "lt-lt"
-  #   title = "Pelican Casino"
+  #   title = "GlitchSpin"
   #   contentDir = "content/lt"
 
   # [languages.ee]
   #   weight = 1
   #   languageName = "Estonian"
   #   languageCode = "et-ee"
-  #   title = "Pelican Casino"
+  #   title = "GlitchSpin"
   #   contentDir = "content/ee"
 
   # [languages.fi]
   #   weight = 1
   #   languageName = "Finnish"
   #   languageCode = "fi-fi"
-  #   title = "Pelican Casino"
+  #   title = "GlitchSpin"
   #   contentDir = "content/fi"
 
   # [languages.se]
   #   weight = 1
   #   languageName = "Swedish"
   #   languageCode = "sv-se"
-  #   title = "Pelican Casino"
+  #   title = "GlitchSpin"
   #   contentDir = "content/se"
 
   # [languages.no]
   #   weight = 1
   #   languageName = "Norwegian"
   #   languageCode = "nb-no"
-  #   title = "Pelican Casino"
+  #   title = "GlitchSpin"
   #   contentDir = "content/no"
 
 
@@ -251,28 +259,28 @@ defaultLang = "dk"
   #   weight = 1
   #   languageName = "Ukrainian"
   #   languageCode = "uk-ua"
-  #   title = "Pelican Casino"
+  #   title = "GlitchSpin"
   #   contentDir = "content/uk"
 
   # [languages.by]
   #   weight = 1
   #   languageName = "Belarusian"
   #   languageCode = "be-by"
-  #   title = "Pelican Casino"
+  #   title = "GlitchSpin"
   #   contentDir = "content/by"
 
   # [languages.ie]
   #   weight = 1
   #   languageName = "Irish"
   #   languageCode = "ga-ie"
-  #   title = "Pelican Casino"
+  #   title = "GlitchSpin"
   #   contentDir = "content/ie"
 
   # [languages.is]
   #   weight = 1
   #   languageName = "Icelandic"
   #   languageCode = "is-is"
-  #   title = "Pelican Casino"
+  #   title = "GlitchSpin"
   #   contentDir = "content/is"
 
   # ———— Нефтяной Ближний Восток ————
@@ -280,54 +288,47 @@ defaultLang = "dk"
   #   weight = 1
   #   languageName = "Arabic (Saudi Arabia)"
   #   languageCode = "ar-sa"
-  #   title = "Pelican Casino"
+  #   title = "GlitchSpin"
   #   contentDir = "content/sa"
 
   # [languages.ae]
   #   weight = 1
   #   languageName = "Arabic (UAE)"
   #   languageCode = "ar-ae"
-  #   title = "Pelican Casino"
+  #   title = "GlitchSpin"
   #   contentDir = "content/ae"
 
   # [languages.kw]
   #   weight = 1
   #   languageName = "Arabic (Kuwait)"
   #   languageCode = "ar-kw"
-  #   title = "Pelican Casino"
+  #   title = "GlitchSpin"
   #   contentDir = "content/kw"
 
   # [languages.qa]
   #   weight = 1
   #   languageName = "Arabic (Qatar)"
   #   languageCode = "ar-qa"
-  #   title = "Pelican Casino"
+  #   title = "GlitchSpin"
   #   contentDir = "content/qa"
 
   # [languages.om]
   #   weight = 1
   #   languageName = "Arabic (Oman)"
   #   languageCode = "ar-om"
-  #   title = "Pelican Casino"
+  #   title = "GlitchSpin"
   #   contentDir = "content/om"
 
   # [languages.bh]
   #   weight = 1
   #   languageName = "Arabic (Bahrain)"
   #   languageCode = "ar-bh"
-  #   title = "Pelican Casino"
+  #   title = "GlitchSpin"
   #   contentDir = "content/bh"
 
   # [languages.iq]
   #   weight = 1
   #   languageName = "Arabic (Iraq)"
   #   languageCode = "ar-iq"
-  #   title = "Pelican Casino"
-  #   contentDir = "content/iq"
-
-  # [languages.ir]
-  #   weight = 1
-  #   languageName = "Persian"
-  #   languageCode = "fa-ir"
-  #   title = "Pelican Casino"
-  #   contentDir = "content/ir"
+  #   title = "GlitchSpin"
+  #   contentDir 

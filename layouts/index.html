@@ -120,6 +120,7 @@
                 <a class="btn btn-ghost" href="{{ .url }}">{{ $label }}</a>
               {{ end }}
             </div>
+            {{ partial "ca-note-inline.html" . }}
             {{ with $brand.hero.stats }}
               <dl class="hero-stats">
                 {{ range . }}

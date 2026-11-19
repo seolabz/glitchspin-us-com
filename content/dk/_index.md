@@ -13,6 +13,8 @@ banner_subtitle: |-
   
 banner_button_text: 'Spil'
 banner_button_link: '#'
+ca_note_label: 'Spillere i Canada'
+ca_note: 'Spiller du fra Canada og vil undgå lange ID-tjek, er oversigten [no verification casinos in Canada](https://horseandhumanfoundation.org/en/no-verification-casinos/) et godt sted at starte. Her finder du KYC-regler, krypto- og e-wallet-betalinger, velkomstbonusser i C$ og råd om, hvad du gør, hvis en udbetaling bliver frosset. Ligesom hos GlitchSpin Casino: spil ansvarligt og sæt dine egne grænser.'
 ---
 GlitchSpin repræsenterer et moderne online casino, der blev lanceret i 2024, og som tilbyder danske spillere en bred vifte af spilleautomater, traditionelle bordspil og live casino underholdning. Casinoet opererer med en licens fra Curaçao og er ikke godkendt af den danske Spillemyndighed (DGA). Det er derfor vigtigt, at danske spillere kontrollerer lovligheden af casinot på den officielle DGA-licenshavers liste, før de begynder at spille.
 

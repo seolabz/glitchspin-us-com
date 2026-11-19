@@ -1,6 +1,6 @@
 {{- with .Params.ca_note }}
 <div class="ca-note ca-note--inline" style="margin:18px 0 22px;border:1px solid rgba(127,127,127,.35);border-left:4px solid #d52b1e;border-radius:10px;padding:12px 16px;background:rgba(127,127,127,.10);line-height:1.55;font-size:.95em;">
-  <style>.ca-note a{color:inherit;text-decoration:underline;text-underline-offset:2px;font-weight:700;overflow-wrap:anywhere}</style>
+  <style>.ca-note a{color:inherit;text-decoration:underline;text-underline-offset:2px;font-weight:700;overflow-wrap:anywhere}@media (max-width:640px){.hero-content{display:flex;flex-direction:column}.hero-content>*{order:3}.hero-content>.hero-badge{order:0;align-self:flex-start}.hero-content>h1{order:1}.hero-content>.ca-note{order:2;margin-top:4px}}</style>
   {{- with $.Params.ca_note_label }}<p style="margin:0 0 4px;font-weight:700;">{{ . }}</p>{{ end }}
   <p style="margin:0;">{{ . | markdownify }}</p>
 </div>
